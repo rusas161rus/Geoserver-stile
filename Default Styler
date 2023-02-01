@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sld:StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0">
+	<sld:NamedLayer>
+		<sld:Name>Default Styler</sld:Name>
+		<sld:UserStyle>
+			<sld:Name>Default Styler</sld:Name>
+			<sld:FeatureTypeStyle>
+			    
+			    <sld:Rule><!--правила для текста-->
+                    <sld:MinScaleDenominator>100</sld:MinScaleDenominator>
+					<sld:MaxScaleDenominator>18000</sld:MaxScaleDenominator>
+                    <TextSymbolizer>
+
+                        <Label>
+                            <ogc:PropertyName>g_house</ogc:PropertyName>
+                        </Label>
+                        
+                        <Font><!--свойства текста, шрифт и тд.-->
+                          <CssParameter name="font-family">Arial</CssParameter>
+                          <CssParameter name="font-size"><ogc:Function name="Categorize">
+                        <ogc:Function name="env">
+                          <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                        </ogc:Function><!--масштабирование текста-->
+                       <ogc:Literal>16</ogc:Literal>
+                       <ogc:Literal>300</ogc:Literal>
+                       <ogc:Literal>14</ogc:Literal>
+                       <ogc:Literal>18000</ogc:Literal>
+                       <ogc:Literal>10</ogc:Literal>
+                        </ogc:Function></CssParameter>
+                          <CssParameter name="font-style">normal</CssParameter>
+                          <CssParameter name="font-weight">bold</CssParameter>
+                        </Font>
+                        
+                        <LabelPlacement><!--центровка метки-->
+                          <PointPlacement>
+                            <AnchorPoint>
+                                <AnchorPointX>0.5</AnchorPointX>
+                                <AnchorPointY>-0.5</AnchorPointY>
+                            </AnchorPoint>
+                            <Displacement>
+                                <DisplacementX>-0.5</DisplacementX>
+                                <DisplacementY>0.5</DisplacementY>
+                            </Displacement>
+                          </PointPlacement>
+                        </LabelPlacement>
+                        
+                        <!--выравнивание по контурам объекта-->
+                        <VendorOption name="autoWrap">60</VendorOption>
+                        <VendorOption name="maxDisplacement">150</VendorOption>
+                        <VendorOption name="polygonAlign">mbr</VendorOption>
+                        <VendorOption name="maxAngleDelta">15</VendorOption>
+                      </TextSymbolizer>
+                </sld:Rule>
+			    
+			    
+				<sld:Rule><!--правила для полигонов-->                 
+					<sld:Name>Rule_1</sld:Name>
+					<sld:Title>Здания, строения</sld:Title>
+					<sld:MinScaleDenominator>100</sld:MinScaleDenominator>
+					<sld:MaxScaleDenominator>18000</sld:MaxScaleDenominator>
+                       <!--свойства полигона-->
+					<sld:PolygonSymbolizer>
+						<sld:Fill>
+							<sld:CssParameter name="fill">#919191</sld:CssParameter>							
+						</sld:Fill>
+						<sld:Stroke>
+							<sld:CssParameter name="stroke">#838383</sld:CssParameter>
+							<CssParameter name="fill-opacity">
+                                <ogc:Function name="Categorize">                    
+                                  <ogc:Function name="env">
+                                    <ogc:Literal>wms_scale_denominator</ogc:Literal>
+                                  </ogc:Function><!--масштабирование контура полигона-->                    
+                                 <ogc:Literal>0.6</ogc:Literal>
+                                 <ogc:Literal>100</ogc:Literal>
+                                 <ogc:Literal>1</ogc:Literal>
+                                 <ogc:Literal>18000</ogc:Literal>
+                                 <ogc:Literal>1.6</ogc:Literal>
+                               </ogc:Function>
+                             </CssParameter>
+						</sld:Stroke>
+					</sld:PolygonSymbolizer>
+				</sld:Rule>
+				
+				
+            </sld:FeatureTypeStyle>
+        </sld:UserStyle>
+	</sld:NamedLayer>
+</sld:StyledLayerDescriptor>
