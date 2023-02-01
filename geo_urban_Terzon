@@ -1,0 +1,1762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sld:StyledLayerDescriptor xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0.0" xmlns:sld="http://www.opengis.net/sld">
+  <sld:Name>StyledLayer name</sld:Name>
+  <sld:NamedLayer>
+    <sld:Name>NamedLayer name</sld:Name>
+    <sld:UserStyle>
+      <sld:Name>Userstyle name</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Name>FeatureTypeStyle name</sld:Name>
+        
+
+        <!-- ЖИЛЫЕ ЗОНЫ -->
+        <sld:Rule><!-- Ж-1 -->
+          <sld:Name>Rule0</sld:Name>
+          <sld:Title>Зона застройки многоэтажными многоквартирными домами</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона застройки многоэтажными многоквартирными домами</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FE0000</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+        
+        <sld:Rule><!-- Ж-1.1 -->
+          <sld:Name>Rule1</sld:Name>
+          <sld:Title>Зона развития застройки многоэтажными многоквартирными домами</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития застройки многоэтажными многоквартирными домами</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FE0000</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>   
+        
+        <sld:Rule><!-- Ж-2 -->
+          <sld:Name>Rule2</sld:Name>
+          <sld:Title>Зона застройки среднеэтажными многоквартирными домами</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона застройки среднеэтажными многоквартирными домами</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FF5500</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Ж-4 -->
+          <sld:Name>Rule3</sld:Name>
+          <sld:Title>Зона застройки индивидуальными домами</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона застройки индивидуальными домами</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FFFF00</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Ж-4.1 -->
+          <sld:Name>Rule4</sld:Name>
+          <sld:Title>Зона развития застройки индивидуальными домами</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития застройки индивидуальными домами</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FFFF00</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Ж-5 -->
+          <sld:Name>Rule5</sld:Name>
+          <sld:Title>Зона перевода застройки сезонного проживания (территории ведения гражданами садоводства и огородничества) в индивидуальное жилищное строительство</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона перевода застройки сезонного проживания (территории ведения гражданами садоводства и огородничества) в индивидуальное жилищное строительство</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FFFF00</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#8BFC33</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОЖ -->
+          <sld:Name>Rule6</sld:Name>
+          <sld:Title>Зона смешанной жилой и общественной застройки</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона смешанной жилой и общественной застройки</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#C2007B</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ОБЩЕСТВЕННО-ДЕЛОВЫЕ ЗОНЫ -->
+        <sld:Rule><!-- ОД-1 -->
+          <sld:Name>Rule7</sld:Name>
+          <sld:Title>Зона административно-делового, культурно-зрелищного, торгового назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона административно-делового, культурно-зрелищного, торгового назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FE3CB9</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-1.1 -->
+          <sld:Name>Rule8</sld:Name>
+          <sld:Title>Зона развития застройки административно-делового, культурно-зрелищного, торгового назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития застройки административно-делового, культурно-зрелищного, торгового назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FE3CB9</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-2 -->
+          <sld:Name>Rule9</sld:Name>
+          <sld:Title>Зона объектов высшего и среднего специального образования</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов высшего и среднего специального образования</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E17BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FF00FF</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-2.1 -->
+          <sld:Name>Rule10</sld:Name>
+          <sld:Title>Зона развития объектов высшего и среднего специального образования</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов высшего и среднего специального образования</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E17BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-3 -->
+          <sld:Name>Rule11</sld:Name>
+          <sld:Title>Зона объектов здравоохранения и социальной защиты</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов здравоохранения и социальной защиты</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E27BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#00F700</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-3.1 -->
+          <sld:Name>Rule12</sld:Name>
+          <sld:Title>Зона развития объектов здравоохранения и социальной защиты</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов здравоохранения и социальной защиты</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E27BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-4 -->
+          <sld:Name>Rule13</sld:Name>
+          <sld:Title>Зона объектов религиозного использования</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов религиозного использования</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E27AFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#71006A</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ОД-5 -->
+          <sld:Name>Rule14</sld:Name>
+          <sld:Title>Зона научно-исследовательских и проектных институтов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона научно-исследовательских и проектных институтов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E17BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ЗОНЫ ИНЖЕНЕРНОЙ И ТРФНСПОРТНОЙ ИНФРАСТРУКТУР -->
+        <sld:Rule><!-- Р-1 -->
+          <sld:Name>Rule15</sld:Name>
+          <sld:Title>Зона озелененных территорий общего пользования (парки, сады, скверы)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона озелененных территорий общего пользования (парки, сады, скверы)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#00FFC5</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-1.1 -->
+          <sld:Name>Rule16</sld:Name>
+          <sld:Title>Зона развития озелененных территорий общего пользования (парки, сады, скверы)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития озелененных территорий общего пользования (парки, сады, скверы)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#00FFC5</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-1.2 -->
+          <sld:Name>Rule17</sld:Name>
+          <sld:Title>Зона развития озелененных территорий общего пользования (парки, сады, скверы, набережные)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития озелененных территорий общего пользования (парки, сады, скверы, набережные)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#00FFC5</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#FD01FD</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-2 -->
+          <sld:Name>Rule18</sld:Name>
+          <sld:Title>Зона лесопарков</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона лесопарков</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#009166</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-2.1 -->
+          <sld:Name>Rule19</sld:Name>
+          <sld:Title>Зона развития лесопарков</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития лесопарков</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#009166</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-3 -->
+          <sld:Name>Rule20</sld:Name>
+          <sld:Title>Зона лесов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона лесов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#00B153</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-3.2 -->
+          <sld:Name>Rule21</sld:Name>
+          <sld:Title>Зона городских лесов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона городских лесов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#00B153</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#06F00B</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">3</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-4 -->
+          <sld:Name>Rule22</sld:Name>
+          <sld:Title>Зона рекреационно-ландшафтного назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона рекреационно-ландшафтного назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#C0FF8A</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-4.1 -->
+          <sld:Name>Rule23</sld:Name>
+          <sld:Title>Зона развития территорий рекреационно-ландшафтного назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития территорий рекреационно-ландшафтного назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#1EE45A</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#01AF1C</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-6 -->
+          <sld:Name>Rule24</sld:Name>
+          <sld:Title>Зона ботанического сада</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона ботанического сада</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#E17BFA</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-7.1 -->
+          <sld:Name>Rule25</sld:Name>
+          <sld:Title>Зона развития зеленых насаждений специального назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития зеленых насаждений специального назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#07A744</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-8 -->
+          <sld:Name>Rule26</sld:Name>
+          <sld:Title>Зона физкультурно-спортивных сооружений</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона физкультурно-спортивных сооружений</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#0090C2</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-8.1 -->
+          <sld:Name>Rule27</sld:Name>
+          <sld:Title>Зона развития физкультурно-спортивных сооружений</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития физкультурно-спортивных сооружений</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#0090C2</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-9 -->
+          <sld:Name>Rule28</sld:Name>
+          <sld:Title>Зона объектов длительного отдыха</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов длительного отдыха</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FF7A7B</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-9.1 -->
+          <sld:Name>Rule29</sld:Name>
+          <sld:Title>Зона развития объектов длительного отдыха</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов длительного отдыха</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FF7A7B</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-9.2 -->
+          <sld:Name>Rule30</sld:Name>
+          <sld:Title>Зона объектов длительного отдыха на островах в акватории Волгоградского водохранилища</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов длительного отдыха на островах в акватории Волгоградского водохранилища</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#80CAC9</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-10 -->
+          <sld:Name>Rule31</sld:Name>
+          <sld:Title>Зона пляжей</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона пляжей</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FFDAB0</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Р-10.1 -->
+          <sld:Name>Rule32</sld:Name>
+          <sld:Title>Зона развития пляжей</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития пляжей</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#FFDAB0</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ПРОИЗВОДСТВЕННЫЕ ЗОНЫ -->
+        <sld:Rule><!-- П-1 -->
+          <sld:Name>Rule33</sld:Name>
+          <sld:Title>Зона объектов промышленного и коммунально-складского назначения IV и V классов опасности по СанПиН</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов промышленного и коммунально-складского назначения IV и V классов опасности по СанПиН</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#D6D6D4</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- П-1.1 -->
+          <sld:Name>Rule34</sld:Name>
+          <sld:Title>Зона развития объектов промышленного и коммунально-складского назначения IV и V классов опасности по СанПиН</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов промышленного и коммунально-складского назначения IV и V классов опасности по СанПиН</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#D6D6D4</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- П-2 -->
+          <sld:Name>Rule35</sld:Name>
+          <sld:Title>Зона объектов промышленного и коммунально-складского назначения III класса опасности по СанПиН</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов промышленного и коммунально-складского назначения III класса опасности по СанПиН</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#9E9E9E</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- П-2.1 -->
+          <sld:Name>Rule36</sld:Name>
+          <sld:Title>Зона развития объектов промышленного и коммунально-складского назначения III класса опасности по СанПиН</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов промышленного и коммунально-складского назначения III класса опасности по СанПиН</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#9E9E9E</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- П-3 -->
+          <sld:Name>Rule37</sld:Name>
+          <sld:Title>Зона объектов промышленного  назначения с высоким отрицательным воздействием на окружающую среду (I-II класса опасности по СанПиН)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов промышленного  назначения с высоким отрицательным воздействием на окружающую среду (I-II класса опасности по СанПиН)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#4A4A4A</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Т-1 -->
+          <sld:Name>Rule38</sld:Name>
+          <sld:Title>Зона полосы отвода железной дороги и железнодорожных путей необщего пользования</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона полосы отвода железной дороги и железнодорожных путей необщего пользования</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#B4B4B4</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Т-3 -->
+          <sld:Name>Rule39</sld:Name>
+          <sld:Title>Зона объектов обслуживания транспорта</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов обслуживания транспорта</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#006A93</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- Т-3.1 -->
+          <sld:Name>Rule40</sld:Name>
+          <sld:Title>Зона развития объектов обслуживания транспорта</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития объектов обслуживания транспорта</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#006A93</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- И-1 -->
+          <sld:Name>Rule41</sld:Name>
+          <sld:Title>Зона объектов инженерной инфраструктуры</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона объектов инженерной инфраструктуры</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#616485</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ЗОНЫ РЕЖИМНЫХ ОБЪЕКТОВ -->
+        <sld:Rule><!-- СП-1 -->
+          <sld:Name>Rule42</sld:Name>
+          <sld:Title>Зона режимных объектов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона режимных объектов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#D0D3FF</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СП-1.1 -->
+          <sld:Name>Rule43</sld:Name>
+          <sld:Title>Зона развития режимных объектов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития режимных объектов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#D0D3FF</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ЗОНЫ СЕЛЬСКОХОЗЯЙСТВЕННОГО ИСПОЛЬЗОВАНИЯ -->
+        <sld:Rule><!-- СХ-1 -->
+          <sld:Name>Rule44</sld:Name>
+          <sld:Title>Зоны сельскохозяйственного использования</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зоны сельскохозяйственного использования</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#CBE1B0</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СХ-2 -->
+          <sld:Name>Rule45</sld:Name>
+          <sld:Title>Зона сельхозпредприятий, питомников для содержания животных, приютов для бездомных животных</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона сельхозпредприятий, питомников для содержания животных, приютов для бездомных животных</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#C3C200</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СХ-3 -->
+          <sld:Name>Rule46</sld:Name>
+          <sld:Title>Зона застройки сезонного проживания (территории ведения гражданами садоводства или огородничества)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона застройки сезонного проживания (территории ведения гражданами садоводства или огородничества)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#73FF00</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СХ-3.1 -->
+          <sld:Name>Rule47</sld:Name>
+          <sld:Title>Зона развития застройки сезонного проживания (территории ведения гражданами садоводства и огордничества)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития застройки сезонного проживания (территории ведения гражданами садоводства и огордничества)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#73FF00</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ЗОНЫ СПЕЦИАЛЬНОГО НАЗНАЧЕНИЯ -->
+        <sld:Rule><!-- СН-1.1 -->
+          <sld:Name>Rule48</sld:Name>
+          <sld:Title>Зона развития полигонов твердых коммунальных (ТКО) и промышленных отходов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития полигонов твердых коммунальных (ТКО) и промышленных отходов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#DE90CE</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СН-1 -->
+          <sld:Name>Rule49</sld:Name>
+          <sld:Title>Зона полигонов твердых коммунальный (ТКО) и промышленных отходов</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона полигонов твердых коммунальный (ТКО) и промышленных отходов</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#DE90CE</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СН-2 -->
+          <sld:Name>Rule50</sld:Name>
+          <sld:Title>Зона кладбищ и мемориальных парков</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона кладбищ и мемориальных парков</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#B8B702</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:GraphicFill>
+                <sld:Graphic>
+                  <sld:ExternalGraphic>
+                    <sld:OnlineResource xlink:type="simple" xlink:href="73_0_11259238.png" />
+                    <sld:Format>image/png</sld:Format>
+                  </sld:ExternalGraphic>
+                </sld:Graphic>
+              </sld:GraphicFill>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- СН-2.1 -->
+          <sld:Name>Rule51</sld:Name>
+          <sld:Title>Зона развития кладбищ и мемориальных парков</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона развития кладбищ и мемориальных парков</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#8FBB6C</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#000000</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <!-- ПРОЧИЕ ТЕРРИТОРИИ -->
+        <sld:Rule><!-- ПТ-1 -->
+          <sld:Name>Rule52</sld:Name>
+          <sld:Title>Зона возможного развития объектов логистики и складского назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона возможного развития объектов логистики и складского назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#9EFF6C</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#DB9BC4</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ПТ-2 -->
+          <sld:Name>Rule53</sld:Name>
+          <sld:Title>Зона возможного развития объектов производственно-коммунального назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона возможного развития объектов производственно-коммунального назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#A6FD67</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#8786B6</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ПТ-3 -->
+          <sld:Name>Rule54</sld:Name>
+          <sld:Title>Зона возможного развития объектов жилого назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона возможного развития объектов жилого назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#A1FF88</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#FFC800</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ПТ-4 -->
+          <sld:Name>Rule55</sld:Name>
+          <sld:Title>Зона возможного развития объектов многофункционального назначения</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона возможного развития объектов многофункционального назначения</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#F2FDFD</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#EF3074</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>
+
+        <sld:Rule><!-- ПТ-5 -->
+          <sld:Name>Rule56</sld:Name>
+          <sld:Title>Зона возможного развития объектов многофункционального назначения на землях сельскохозяйственного использования (на конец расчетного срока генерального плана города)</sld:Title>
+          <ogc:Filter>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>urban_kind_obj_v</ogc:PropertyName>
+              <ogc:Literal>Зона возможного развития объектов многофункционального назначения на землях сельскохозяйственного использования (на конец расчетного срока генерального плана города)</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <sld:PolygonSymbolizer>
+            <sld:Fill>
+              <sld:CssParameter name="fill">#BFF095</sld:CssParameter>
+            </sld:Fill>
+          </sld:PolygonSymbolizer>
+          <sld:PolygonSymbolizer>
+            <Fill>
+                <GraphicFill>
+                  <Graphic>
+                    <Mark>
+                      <WellKnownName>shape://slash</WellKnownName>
+                      <Stroke>
+                        <CssParameter name="stroke">#FA0766</CssParameter>
+                        <CssParameter name="stroke-width">1</CssParameter>
+                      </Stroke>
+                    </Mark>
+                    <Size>16</Size>
+                  </Graphic>
+                </GraphicFill>
+              </Fill>
+          </sld:PolygonSymbolizer>
+          <sld:LineSymbolizer>
+            <sld:PerpendicularOffset>0</sld:PerpendicularOffset>
+            <sld:Stroke>
+              <sld:CssParameter name="stroke">#000000</sld:CssParameter>
+              <sld:CssParameter name="stroke-width">1</sld:CssParameter>
+            </sld:Stroke>
+          </sld:LineSymbolizer>
+        </sld:Rule>  
+
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>
